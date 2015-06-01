@@ -1,0 +1,144 @@
+
+State Machine - |final_178_quartus|nios_ii_system:inst|nios_ii_system_vga_pixel_buffer:vga_pixel_buffer|s_pixel_buffer
+Name s_pixel_buffer.STATE_3_MAX_PENDING_READS_STALL s_pixel_buffer.STATE_2_READ_BUFFER s_pixel_buffer.STATE_1_WAIT_FOR_LAST_PIXEL s_pixel_buffer.STATE_0_IDLE 
+s_pixel_buffer.STATE_0_IDLE 0 0 0 0 
+s_pixel_buffer.STATE_1_WAIT_FOR_LAST_PIXEL 0 0 1 1 
+s_pixel_buffer.STATE_2_READ_BUFFER 0 1 0 1 
+s_pixel_buffer.STATE_3_MAX_PENDING_READS_STALL 1 0 0 1 
+
+State Machine - |final_178_quartus|nios_ii_system:inst|nios_ii_system_vga_pixel_scalar:vga_pixel_scalar|altera_up_video_scaler_multiply_height:Multiply_Height|s_multiply_height
+Name s_multiply_height.STATE_0_GET_CURRENT_LINE s_multiply_height.STATE_2_OUTPUT_LAST_LINE s_multiply_height.STATE_1_LOOP_FIFO 
+s_multiply_height.STATE_0_GET_CURRENT_LINE 0 0 0 
+s_multiply_height.STATE_1_LOOP_FIFO 1 0 1 
+s_multiply_height.STATE_2_OUTPUT_LAST_LINE 1 1 0 
+
+State Machine - |final_178_quartus|nios_ii_system:inst|nios_ii_system_av_config:av_config|s_serial_transfer
+Name s_serial_transfer.STATE_6_POST_READ s_serial_transfer.STATE_5_READ_TRANSFER s_serial_transfer.STATE_4_PRE_READ s_serial_transfer.STATE_3_POST_WRITE s_serial_transfer.STATE_2_WRITE_TRANSFER s_serial_transfer.STATE_1_PRE_WRITE s_serial_transfer.STATE_0_IDLE 
+s_serial_transfer.STATE_0_IDLE 0 0 0 0 0 0 0 
+s_serial_transfer.STATE_1_PRE_WRITE 0 0 0 0 0 1 1 
+s_serial_transfer.STATE_2_WRITE_TRANSFER 0 0 0 0 1 0 1 
+s_serial_transfer.STATE_3_POST_WRITE 0 0 0 1 0 0 1 
+s_serial_transfer.STATE_4_PRE_READ 0 0 1 0 0 0 1 
+s_serial_transfer.STATE_5_READ_TRANSFER 0 1 0 0 0 0 1 
+s_serial_transfer.STATE_6_POST_READ 1 0 0 0 0 0 1 
+
+State Machine - |final_178_quartus|nios_ii_system:inst|nios_ii_system_av_config:av_config|altera_up_av_config_serial_bus_controller:Serial_Bus_Controller|s_serial_protocol
+Name s_serial_protocol.STATE_5_STOP_BIT s_serial_protocol.STATE_4_TRANSFER s_serial_protocol.STATE_3_START_BIT s_serial_protocol.STATE_2_RESTART_BIT s_serial_protocol.STATE_1_INITIALIZE s_serial_protocol.STATE_0_IDLE 
+s_serial_protocol.STATE_0_IDLE 0 0 0 0 0 0 
+s_serial_protocol.STATE_1_INITIALIZE 0 0 0 0 1 1 
+s_serial_protocol.STATE_2_RESTART_BIT 0 0 0 1 0 1 
+s_serial_protocol.STATE_3_START_BIT 0 0 1 0 0 1 
+s_serial_protocol.STATE_4_TRANSFER 0 1 0 0 0 1 
+s_serial_protocol.STATE_5_STOP_BIT 1 0 0 0 0 1 
+
+State Machine - |final_178_quartus|nios_ii_system:inst|nios_ii_system_sd_ram:sd_ram|m_next
+Name m_next.010000000 m_next.000010000 m_next.000001000 m_next.000000001 
+m_next.000000001 0 0 0 0 
+m_next.000001000 0 0 1 1 
+m_next.000010000 0 1 0 1 
+m_next.010000000 1 0 0 1 
+
+State Machine - |final_178_quartus|nios_ii_system:inst|nios_ii_system_sd_ram:sd_ram|m_state
+Name m_state.100000000 m_state.010000000 m_state.001000000 m_state.000100000 m_state.000010000 m_state.000001000 m_state.000000100 m_state.000000010 m_state.000000001 
+m_state.000000001 0 0 0 0 0 0 0 0 0 
+m_state.000000010 0 0 0 0 0 0 0 1 1 
+m_state.000000100 0 0 0 0 0 0 1 0 1 
+m_state.000001000 0 0 0 0 0 1 0 0 1 
+m_state.000010000 0 0 0 0 1 0 0 0 1 
+m_state.000100000 0 0 0 1 0 0 0 0 1 
+m_state.001000000 0 0 1 0 0 0 0 0 1 
+m_state.010000000 0 1 0 0 0 0 0 0 1 
+m_state.100000000 1 0 0 0 0 0 0 0 1 
+
+State Machine - |final_178_quartus|nios_ii_system:inst|nios_ii_system_sd_ram:sd_ram|i_next
+Name i_next.111 i_next.101 i_next.010 i_next.000 
+i_next.000 0 0 0 0 
+i_next.010 0 0 1 1 
+i_next.101 0 1 0 1 
+i_next.111 1 0 0 1 
+
+State Machine - |final_178_quartus|nios_ii_system:inst|nios_ii_system_sd_ram:sd_ram|i_state
+Name i_state.111 i_state.101 i_state.011 i_state.010 i_state.001 i_state.000 
+i_state.000 0 0 0 0 0 0 
+i_state.001 0 0 0 0 1 1 
+i_state.010 0 0 0 1 0 1 
+i_state.011 0 0 1 0 0 1 
+i_state.101 0 1 0 0 0 1 
+i_state.111 1 0 0 0 0 1 
+
+State Machine - |final_178_quartus|nios_ii_system:inst|Altera_UP_SD_Card_Avalon_Interface:sd_card|current_cmd_state
+Name current_cmd_state.s_UPDATE_AUX_SR current_cmd_state.s_WAIT_RESPONSE current_cmd_state.s_WAIT_COMMAND current_cmd_state.s_RESET_CMD 
+current_cmd_state.s_RESET_CMD 0 0 0 0 
+current_cmd_state.s_WAIT_COMMAND 0 0 1 1 
+current_cmd_state.s_WAIT_RESPONSE 0 1 0 1 
+current_cmd_state.s_UPDATE_AUX_SR 1 0 0 1 
+
+State Machine - |final_178_quartus|nios_ii_system:inst|Altera_UP_SD_Card_Avalon_Interface:sd_card|current_state
+Name current_state.s_WAIT_RELEASE current_state.s_WRITE_SECOND_WORD current_state.s_WRITE_SECOND_BYTE current_state.s_WR_READ_SECOND_WORD_DELAY current_state.s_WR_READ_SECOND_WORD current_state.s_WRITE_FIRST_WORD current_state.s_WRITE_FIRST_BYTE current_state.s_WR_READ_FIRST_WORD_DELAY current_state.s_WR_READ_FIRST_WORD current_state.s_RECEIVE_SECOND_WORD current_state.s_RECEIVE_FIRST_WORD current_state.s_READ_SECOND_WORD current_state.s_READ_FIRST_WORD current_state.s_WAIT_REQUEST current_state.s_RESET 
+current_state.s_RESET 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
+current_state.s_WAIT_REQUEST 0 0 0 0 0 0 0 0 0 0 0 0 0 1 1 
+current_state.s_READ_FIRST_WORD 0 0 0 0 0 0 0 0 0 0 0 0 1 0 1 
+current_state.s_READ_SECOND_WORD 0 0 0 0 0 0 0 0 0 0 0 1 0 0 1 
+current_state.s_RECEIVE_FIRST_WORD 0 0 0 0 0 0 0 0 0 0 1 0 0 0 1 
+current_state.s_RECEIVE_SECOND_WORD 0 0 0 0 0 0 0 0 0 1 0 0 0 0 1 
+current_state.s_WR_READ_FIRST_WORD 0 0 0 0 0 0 0 0 1 0 0 0 0 0 1 
+current_state.s_WR_READ_FIRST_WORD_DELAY 0 0 0 0 0 0 0 1 0 0 0 0 0 0 1 
+current_state.s_WRITE_FIRST_BYTE 0 0 0 0 0 0 1 0 0 0 0 0 0 0 1 
+current_state.s_WRITE_FIRST_WORD 0 0 0 0 0 1 0 0 0 0 0 0 0 0 1 
+current_state.s_WR_READ_SECOND_WORD 0 0 0 0 1 0 0 0 0 0 0 0 0 0 1 
+current_state.s_WR_READ_SECOND_WORD_DELAY 0 0 0 1 0 0 0 0 0 0 0 0 0 0 1 
+current_state.s_WRITE_SECOND_BYTE 0 0 1 0 0 0 0 0 0 0 0 0 0 0 1 
+current_state.s_WRITE_SECOND_WORD 0 1 0 0 0 0 0 0 0 0 0 0 0 0 1 
+current_state.s_WAIT_RELEASE 1 0 0 0 0 0 0 0 0 0 0 0 0 0 1 
+
+State Machine - |final_178_quartus|nios_ii_system:inst|Altera_UP_SD_Card_Avalon_Interface:sd_card|Altera_UP_SD_Card_Interface:SD_Card_Port|Altera_UP_SD_Card_Buffer:data_line|current_state
+Name current_state.s_WAIT_DEASSERT current_state.s_RECEIVING_STOP_BIT current_state.s_RECEIVING_DATA current_state.s_RECEIVING_LEADING_BITS current_state.s_WAIT_DATA_START current_state.s_WAIT_BUSY_END current_state.s_WAIT_BUSY current_state.s_SEND_STOP current_state.s_SEND_CRC current_state.s_SEND_DATA current_state.s_SEND_START_BIT current_state.s_WAIT_REQUEST current_state.s_RESET 
+current_state.s_RESET 0 0 0 0 0 0 0 0 0 0 0 0 0 
+current_state.s_WAIT_REQUEST 0 0 0 0 0 0 0 0 0 0 0 1 1 
+current_state.s_SEND_START_BIT 0 0 0 0 0 0 0 0 0 0 1 0 1 
+current_state.s_SEND_DATA 0 0 0 0 0 0 0 0 0 1 0 0 1 
+current_state.s_SEND_CRC 0 0 0 0 0 0 0 0 1 0 0 0 1 
+current_state.s_SEND_STOP 0 0 0 0 0 0 0 1 0 0 0 0 1 
+current_state.s_WAIT_BUSY 0 0 0 0 0 0 1 0 0 0 0 0 1 
+current_state.s_WAIT_BUSY_END 0 0 0 0 0 1 0 0 0 0 0 0 1 
+current_state.s_WAIT_DATA_START 0 0 0 0 1 0 0 0 0 0 0 0 1 
+current_state.s_RECEIVING_LEADING_BITS 0 0 0 1 0 0 0 0 0 0 0 0 1 
+current_state.s_RECEIVING_DATA 0 0 1 0 0 0 0 0 0 0 0 0 1 
+current_state.s_RECEIVING_STOP_BIT 0 1 0 0 0 0 0 0 0 0 0 0 1 
+current_state.s_WAIT_DEASSERT 1 0 0 0 0 0 0 0 0 0 0 0 1 
+
+State Machine - |final_178_quartus|nios_ii_system:inst|Altera_UP_SD_Card_Avalon_Interface:sd_card|Altera_UP_SD_Card_Interface:SD_Card_Port|Altera_UP_SD_Card_Control_FSM:control_FSM|current_state
+Name current_state.s_PERIODIC_STATUS_CHECK current_state.s_WAIT_DEASSERT current_state.s_WAIT_FOR_CLOCK_EDGE_BEFORE_DISABLE current_state.s_WAIT_RESPONSE current_state.s_SEND_COMMAND current_state.s_GENERATE_COMMAND current_state.s_REACTIVATE_CLOCK current_state.s_AWAIT_USER_COMMAND current_state.s_TOGGLE_CLOCK_FREQUENCY current_state.s_GO_TO_NEXT_COMMAND current_state.s_WAIT_PREDEFINED_COMMAND_RESPONSE current_state.s_WAIT_PREDEFINED_COMMAND_TRANSMITTED current_state.s_GENERATE_PREDEFINED_COMMAND current_state.s_WAIT_74_CYCLES current_state.s_RESET 
+current_state.s_RESET 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
+current_state.s_WAIT_74_CYCLES 0 0 0 0 0 0 0 0 0 0 0 0 0 1 1 
+current_state.s_GENERATE_PREDEFINED_COMMAND 0 0 0 0 0 0 0 0 0 0 0 0 1 0 1 
+current_state.s_WAIT_PREDEFINED_COMMAND_TRANSMITTED 0 0 0 0 0 0 0 0 0 0 0 1 0 0 1 
+current_state.s_WAIT_PREDEFINED_COMMAND_RESPONSE 0 0 0 0 0 0 0 0 0 0 1 0 0 0 1 
+current_state.s_GO_TO_NEXT_COMMAND 0 0 0 0 0 0 0 0 0 1 0 0 0 0 1 
+current_state.s_TOGGLE_CLOCK_FREQUENCY 0 0 0 0 0 0 0 0 1 0 0 0 0 0 1 
+current_state.s_AWAIT_USER_COMMAND 0 0 0 0 0 0 0 1 0 0 0 0 0 0 1 
+current_state.s_REACTIVATE_CLOCK 0 0 0 0 0 0 1 0 0 0 0 0 0 0 1 
+current_state.s_GENERATE_COMMAND 0 0 0 0 0 1 0 0 0 0 0 0 0 0 1 
+current_state.s_SEND_COMMAND 0 0 0 0 1 0 0 0 0 0 0 0 0 0 1 
+current_state.s_WAIT_RESPONSE 0 0 0 1 0 0 0 0 0 0 0 0 0 0 1 
+current_state.s_WAIT_FOR_CLOCK_EDGE_BEFORE_DISABLE 0 0 1 0 0 0 0 0 0 0 0 0 0 0 1 
+current_state.s_WAIT_DEASSERT 0 1 0 0 0 0 0 0 0 0 0 0 0 0 1 
+current_state.s_PERIODIC_STATUS_CHECK 1 0 0 0 0 0 0 0 0 0 0 0 0 0 1 
+
+State Machine - |final_178_quartus|nios_ii_system:inst|Altera_UP_SD_Card_Avalon_Interface:sd_card|Altera_UP_SD_Card_Interface:SD_Card_Port|Altera_UP_SD_Card_Response_Receiver:response_receiver|current_state
+Name current_state.s_WAIT_BEGIN_DEASSERT current_state.s_WAIT_BUSY_END current_state.s_WAIT_BUSY current_state.s_WAIT_PROCESSING_DELAY current_state.s_WAIT_END current_state.s_WAIT_BEGIN 
+current_state.s_WAIT_BEGIN 0 0 0 0 0 0 
+current_state.s_WAIT_END 0 0 0 0 1 1 
+current_state.s_WAIT_PROCESSING_DELAY 0 0 0 1 0 1 
+current_state.s_WAIT_BUSY 0 0 1 0 0 1 
+current_state.s_WAIT_BUSY_END 0 1 0 0 0 1 
+current_state.s_WAIT_BEGIN_DEASSERT 1 0 0 0 0 1 
+
+State Machine - |final_178_quartus|nios_ii_system:inst|nios_ii_system_cpu:cpu|nios_ii_system_cpu_nios2_oci:the_nios_ii_system_cpu_nios2_oci|nios_ii_system_cpu_jtag_debug_module_wrapper:the_nios_ii_system_cpu_jtag_debug_module_wrapper|nios_ii_system_cpu_jtag_debug_module_tck:the_nios_ii_system_cpu_jtag_debug_module_tck|DRsize
+Name DRsize.101 DRsize.100 DRsize.011 DRsize.010 DRsize.001 DRsize.000 
+DRsize.000 0 0 0 0 0 0 
+DRsize.001 0 0 0 0 1 1 
+DRsize.010 0 0 0 1 0 1 
+DRsize.011 0 0 1 0 0 1 
+DRsize.100 0 1 0 0 0 1 
+DRsize.101 1 0 0 0 0 1 

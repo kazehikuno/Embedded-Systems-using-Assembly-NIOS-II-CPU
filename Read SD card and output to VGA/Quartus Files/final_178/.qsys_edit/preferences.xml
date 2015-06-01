@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<preferences>
+ <debug showDebugMenu="0" />
+ <systemtable>
+  <columns>
+   <connections preferredWidth="319" />
+   <irq preferredWidth="34" />
+   <baseaddress preferredWidth="100" />
+   <endaddress preferredWidth="66" />
+   <name preferredWidth="181" />
+  </columns>
+ </systemtable>
+ <clocktable>
+  <columns>
+   <clockname preferredWidth="355" />
+   <clocksource preferredWidth="355" />
+   <frequency preferredWidth="344" />
+  </columns>
+ </clocktable>
+ <library
+   expandedCategories="Library/Memories and Memory Controllers,Library/DSP,Library/University Program/Audio &amp; Video,Library/Bridges,Library/Bridges/Memory-Mapped,Library/Interface Protocols/Ethernet/Submodules,Library,Library/Interface Protocols/SDI,Library/Verification,Project,Library/Memories and Memory Controllers/On-Chip,Library/Qsys Interconnect,Library/DSP/Video and Image Processing,Library/University Program/Audio &amp; Video/Video,Library/Interface Protocols,Library/Qsys Interconnect/Interrupt,Library/Verification/Simulation,Library/Interface Protocols/Ethernet,Library/Clock and Reset,Library/University Program" />
+ <window width="1366" height="728" x="0" y="0" />
+ <hdlexample language="VERILOG" />
+</preferences>

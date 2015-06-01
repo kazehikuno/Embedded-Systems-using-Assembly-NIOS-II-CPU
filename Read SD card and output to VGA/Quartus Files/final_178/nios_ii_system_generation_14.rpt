@@ -1,0 +1,453 @@
+Info: Starting: Create block symbol file (.bsf)
+Info: ip-generate --project-directory=C:/final_178/ --output-directory=C:/final_178/nios_ii_system/ --report-file=bsf:C:/final_178/nios_ii_system.bsf --system-info=DEVICE_FAMILY="Cyclone II" --system-info=DEVICE=EP2C35F672C6 --system-info=DEVICE_SPEEDGRADE=6 --component-file=C:/final_178/nios_ii_system.qsys
+Progress: Loading final_178/nios_ii_system.qsys
+Progress: Reading input file
+Progress: Adding clk [clock_source 13.0]
+Progress: Parameterizing module clk
+Progress: Adding cpu [altera_nios2_qsys 13.0]
+Progress: Parameterizing module cpu
+Progress: Adding onchip_memory [altera_avalon_onchip_memory2 13.0.1.99.2]
+Progress: Parameterizing module onchip_memory
+Progress: Adding switches [altera_avalon_pio 13.0.1.99.2]
+Progress: Parameterizing module switches
+Progress: Adding led_red [altera_avalon_pio 13.0.1.99.2]
+Progress: Parameterizing module led_red
+Progress: Adding jtag_uart [altera_avalon_jtag_uart 13.0.1.99.2]
+Progress: Parameterizing module jtag_uart
+Progress: Adding led_green [altera_avalon_pio 13.0.1.99.2]
+Progress: Parameterizing module led_green
+Progress: Adding hex0 [altera_avalon_pio 13.0.1.99.2]
+Progress: Parameterizing module hex0
+Progress: Adding hex1 [altera_avalon_pio 13.0.1.99.2]
+Progress: Parameterizing module hex1
+Progress: Adding keys [altera_avalon_pio 13.0.1.99.2]
+Progress: Parameterizing module keys
+Progress: Adding sram [altera_up_avalon_sram 13.0]
+Progress: Parameterizing module sram
+Progress: Adding sys_clk_timer [altera_avalon_timer 13.0.1.99.2]
+Progress: Parameterizing module sys_clk_timer
+Progress: Adding high_res_timer [altera_avalon_timer 13.0.1.99.2]
+Progress: Parameterizing module high_res_timer
+Progress: Adding sysid [altera_avalon_sysid_qsys 13.0]
+Progress: Parameterizing module sysid
+Progress: Adding lfsr [altera_avalon_pio 13.0.1.99.2]
+Progress: Parameterizing module lfsr
+Progress: Adding binary_out [altera_avalon_pio 13.0.1.99.2]
+Progress: Parameterizing module binary_out
+Progress: Adding bcd_in [altera_avalon_pio 13.0.1.99.2]
+Progress: Parameterizing module bcd_in
+Progress: Adding gpio [altera_avalon_pio 13.0.1.99.2]
+Progress: Parameterizing module gpio
+Progress: Adding sd_card [Altera_UP_SD_Card_Avalon_Interface 13.0]
+Progress: Parameterizing module sd_card
+Progress: Adding sd_ram [altera_avalon_new_sdram_controller 13.0.1.99.2]
+Progress: Parameterizing module sd_ram
+Progress: Adding DE2_clock_sigs [altera_up_clocks 13.0]
+Progress: Parameterizing module DE2_clock_sigs
+Progress: Adding lcd [altera_avalon_lcd_16207 13.0.1.99.2]
+Progress: Parameterizing module lcd
+Progress: Adding av_config [altera_up_avalon_audio_and_video_config 13.0]
+Progress: Parameterizing module av_config
+Progress: Adding vga_char_buffer [altera_up_avalon_video_character_buffer_with_dma 13.0]
+Progress: Parameterizing module vga_char_buffer
+Progress: Adding vga_dual_clock_fifo [altera_up_avalon_video_dual_clock_buffer 13.0]
+Progress: Parameterizing module vga_dual_clock_fifo
+Progress: Adding vga_controller [altera_up_avalon_video_vga_controller 13.0]
+Progress: Parameterizing module vga_controller
+Progress: Adding vga_pixel_scalar [altera_up_avalon_video_scaler 13.0]
+Progress: Parameterizing module vga_pixel_scalar
+Progress: Adding rgb_resampler [altera_up_avalon_video_rgb_resampler 13.0]
+Progress: Parameterizing module rgb_resampler
+Progress: Adding vga_pixel_buffer [altera_up_avalon_video_pixel_buffer_dma 13.0]
+Progress: Parameterizing module vga_pixel_buffer
+Progress: Adding vga_clk_bridge [altera_clock_bridge 13.0]
+Progress: Parameterizing module vga_clk_bridge
+Progress: Adding alpha_blending [altera_up_avalon_video_alpha_blender 13.0]
+Progress: Parameterizing module alpha_blending
+Progress: Building connections
+Progress: Parameterizing connections
+Progress: Validating
+Progress: Done reading input file
+Info: nios_ii_system.switches: PIO inputs are not hardwired in test bench. Undefined values will be read from PIO inputs during simulation.
+Info: nios_ii_system.keys: PIO inputs are not hardwired in test bench. Undefined values will be read from PIO inputs during simulation.
+Info: nios_ii_system.sysid: System ID is not assigned automatically. Edit the System ID parameter to provide a unique ID
+Info: nios_ii_system.sysid: Time stamp will be automatically updated when this component is generated.
+Info: nios_ii_system.lfsr: PIO inputs are not hardwired in test bench. Undefined values will be read from PIO inputs during simulation.
+Info: nios_ii_system.bcd_in: PIO inputs are not hardwired in test bench. Undefined values will be read from PIO inputs during simulation.
+Info: nios_ii_system.gpio: PIO inputs are not hardwired in test bench. Undefined values will be read from PIO inputs during simulation.
+Info: nios_ii_system.vga_char_buffer: Character Resolution: 80 x 60
+Info: nios_ii_system.vga_controller: Video Output Stream: Format: 640 x 480 with Color: 10 (bits) x 3 (planes)
+Info: nios_ii_system.vga_pixel_scalar: Change in Resolution: 320 x 240 -> 640 x 480
+Info: nios_ii_system.rgb_resampler: RGB Resampling: 16 (bits) x 1 (planes) -> 10 (bits) x 3 (planes)
+Warning: nios_ii_system.vga_pixel_scalar.avalon_scaler_source: vga_pixel_scalar.avalon_scaler_source must be connected to an Avalon-ST sink
+Info: ip-generate succeeded.
+Info: Finished: Create block symbol file (.bsf)
+Info: 
+Info: Starting: Create HDL design files for synthesis
+Info: ip-generate --project-directory=C:/final_178/ --output-directory=C:/final_178/nios_ii_system/synthesis/ --file-set=QUARTUS_SYNTH --report-file=sopcinfo:C:/final_178/nios_ii_system.sopcinfo --report-file=html:C:/final_178/nios_ii_system.html --report-file=qip:C:/final_178/nios_ii_system/synthesis/nios_ii_system.qip --report-file=cmp:C:/final_178/nios_ii_system.cmp --report-file=svd --system-info=DEVICE_FAMILY="Cyclone II" --system-info=DEVICE=EP2C35F672C6 --system-info=DEVICE_SPEEDGRADE=6 --component-file=C:/final_178/nios_ii_system.qsys --language=VERILOG
+Progress: Loading final_178/nios_ii_system.qsys
+Progress: Reading input file
+Progress: Adding clk [clock_source 13.0]
+Progress: Parameterizing module clk
+Progress: Adding cpu [altera_nios2_qsys 13.0]
+Progress: Parameterizing module cpu
+Progress: Adding onchip_memory [altera_avalon_onchip_memory2 13.0.1.99.2]
+Progress: Parameterizing module onchip_memory
+Progress: Adding switches [altera_avalon_pio 13.0.1.99.2]
+Progress: Parameterizing module switches
+Progress: Adding led_red [altera_avalon_pio 13.0.1.99.2]
+Progress: Parameterizing module led_red
+Progress: Adding jtag_uart [altera_avalon_jtag_uart 13.0.1.99.2]
+Progress: Parameterizing module jtag_uart
+Progress: Adding led_green [altera_avalon_pio 13.0.1.99.2]
+Progress: Parameterizing module led_green
+Progress: Adding hex0 [altera_avalon_pio 13.0.1.99.2]
+Progress: Parameterizing module hex0
+Progress: Adding hex1 [altera_avalon_pio 13.0.1.99.2]
+Progress: Parameterizing module hex1
+Progress: Adding keys [altera_avalon_pio 13.0.1.99.2]
+Progress: Parameterizing module keys
+Progress: Adding sram [altera_up_avalon_sram 13.0]
+Progress: Parameterizing module sram
+Progress: Adding sys_clk_timer [altera_avalon_timer 13.0.1.99.2]
+Progress: Parameterizing module sys_clk_timer
+Progress: Adding high_res_timer [altera_avalon_timer 13.0.1.99.2]
+Progress: Parameterizing module high_res_timer
+Progress: Adding sysid [altera_avalon_sysid_qsys 13.0]
+Progress: Parameterizing module sysid
+Progress: Adding lfsr [altera_avalon_pio 13.0.1.99.2]
+Progress: Parameterizing module lfsr
+Progress: Adding binary_out [altera_avalon_pio 13.0.1.99.2]
+Progress: Parameterizing module binary_out
+Progress: Adding bcd_in [altera_avalon_pio 13.0.1.99.2]
+Progress: Parameterizing module bcd_in
+Progress: Adding gpio [altera_avalon_pio 13.0.1.99.2]
+Progress: Parameterizing module gpio
+Progress: Adding sd_card [Altera_UP_SD_Card_Avalon_Interface 13.0]
+Progress: Parameterizing module sd_card
+Progress: Adding sd_ram [altera_avalon_new_sdram_controller 13.0.1.99.2]
+Progress: Parameterizing module sd_ram
+Progress: Adding DE2_clock_sigs [altera_up_clocks 13.0]
+Progress: Parameterizing module DE2_clock_sigs
+Progress: Adding lcd [altera_avalon_lcd_16207 13.0.1.99.2]
+Progress: Parameterizing module lcd
+Progress: Adding av_config [altera_up_avalon_audio_and_video_config 13.0]
+Progress: Parameterizing module av_config
+Progress: Adding vga_char_buffer [altera_up_avalon_video_character_buffer_with_dma 13.0]
+Progress: Parameterizing module vga_char_buffer
+Progress: Adding vga_dual_clock_fifo [altera_up_avalon_video_dual_clock_buffer 13.0]
+Progress: Parameterizing module vga_dual_clock_fifo
+Progress: Adding vga_controller [altera_up_avalon_video_vga_controller 13.0]
+Progress: Parameterizing module vga_controller
+Progress: Adding vga_pixel_scalar [altera_up_avalon_video_scaler 13.0]
+Progress: Parameterizing module vga_pixel_scalar
+Progress: Adding rgb_resampler [altera_up_avalon_video_rgb_resampler 13.0]
+Progress: Parameterizing module rgb_resampler
+Progress: Adding vga_pixel_buffer [altera_up_avalon_video_pixel_buffer_dma 13.0]
+Progress: Parameterizing module vga_pixel_buffer
+Progress: Adding vga_clk_bridge [altera_clock_bridge 13.0]
+Progress: Parameterizing module vga_clk_bridge
+Progress: Adding alpha_blending [altera_up_avalon_video_alpha_blender 13.0]
+Progress: Parameterizing module alpha_blending
+Progress: Building connections
+Progress: Parameterizing connections
+Progress: Validating
+Progress: Done reading input file
+Info: nios_ii_system.switches: PIO inputs are not hardwired in test bench. Undefined values will be read from PIO inputs during simulation.
+Info: nios_ii_system.keys: PIO inputs are not hardwired in test bench. Undefined values will be read from PIO inputs during simulation.
+Info: nios_ii_system.sysid: System ID is not assigned automatically. Edit the System ID parameter to provide a unique ID
+Info: nios_ii_system.sysid: Time stamp will be automatically updated when this component is generated.
+Info: nios_ii_system.lfsr: PIO inputs are not hardwired in test bench. Undefined values will be read from PIO inputs during simulation.
+Info: nios_ii_system.bcd_in: PIO inputs are not hardwired in test bench. Undefined values will be read from PIO inputs during simulation.
+Info: nios_ii_system.gpio: PIO inputs are not hardwired in test bench. Undefined values will be read from PIO inputs during simulation.
+Info: nios_ii_system.vga_char_buffer: Character Resolution: 80 x 60
+Info: nios_ii_system.vga_controller: Video Output Stream: Format: 640 x 480 with Color: 10 (bits) x 3 (planes)
+Info: nios_ii_system.vga_pixel_scalar: Change in Resolution: 320 x 240 -> 640 x 480
+Info: nios_ii_system.rgb_resampler: RGB Resampling: 16 (bits) x 1 (planes) -> 10 (bits) x 3 (planes)
+Warning: nios_ii_system.vga_pixel_scalar.avalon_scaler_source: vga_pixel_scalar.avalon_scaler_source must be connected to an Avalon-ST sink
+Info: nios_ii_system: Generating nios_ii_system "nios_ii_system" for QUARTUS_SYNTH
+Info: pipeline_bridge_swap_transform: After transform: 30 modules, 121 connections
+Info: No custom instruction connections, skipping transform 
+Info: merlin_translator_transform: After transform: 57 modules, 226 connections
+Info: merlin_domain_transform: After transform: 111 modules, 585 connections
+Info: merlin_router_transform: After transform: 138 modules, 690 connections
+Info: merlin_traffic_limiter_transform: After transform: 139 modules, 695 connections
+Info: merlin_burst_transform: After transform: 142 modules, 707 connections
+Info: reset_adaptation_transform: After transform: 146 modules, 570 connections
+Info: merlin_network_to_switch_transform: After transform: 199 modules, 678 connections
+Info: merlin_width_transform: After transform: 205 modules, 696 connections
+Info: merlin_pipeline_transform: After transform: 207 modules, 702 connections
+Info: merlin_mm_transform: After transform: 207 modules, 702 connections
+Info: merlin_interrupt_mapper_transform: After transform: 208 modules, 705 connections
+Warning: nios_ii_system: "No matching role found for rst_controller:reset_out:reset_req (reset_req)"
+Warning: nios_ii_system: "No matching role found for rst_controller:reset_out:reset_req (reset_req)"
+Warning: nios_ii_system: "No matching role found for rst_controller:reset_out:reset_req (reset_req)"
+Warning: nios_ii_system: "No matching role found for rst_controller:reset_out:reset_req (reset_req)"
+Warning: nios_ii_system: "No matching role found for rst_controller:reset_out:reset_req (reset_req)"
+Warning: nios_ii_system: "No matching role found for rst_controller:reset_out:reset_req (reset_req)"
+Warning: nios_ii_system: "No matching role found for rst_controller:reset_out:reset_req (reset_req)"
+Warning: nios_ii_system: "No matching role found for rst_controller:reset_out:reset_req (reset_req)"
+Warning: nios_ii_system: "No matching role found for rst_controller:reset_out:reset_req (reset_req)"
+Warning: nios_ii_system: "No matching role found for rst_controller:reset_out:reset_req (reset_req)"
+Warning: nios_ii_system: "No matching role found for rst_controller:reset_out:reset_req (reset_req)"
+Warning: nios_ii_system: "No matching role found for rst_controller:reset_out:reset_req (reset_req)"
+Warning: nios_ii_system: "No matching role found for rst_controller:reset_out:reset_req (reset_req)"
+Warning: nios_ii_system: "No matching role found for rst_controller:reset_out:reset_req (reset_req)"
+Warning: nios_ii_system: "No matching role found for rst_controller:reset_out:reset_req (reset_req)"
+Warning: nios_ii_system: "No matching role found for rst_controller:reset_out:reset_req (reset_req)"
+Warning: nios_ii_system: "No matching role found for rst_controller:reset_out:reset_req (reset_req)"
+Warning: nios_ii_system: "No matching role found for rst_controller:reset_out:reset_req (reset_req)"
+Warning: nios_ii_system: "No matching role found for rst_controller:reset_out:reset_req (reset_req)"
+Warning: nios_ii_system: "No matching role found for rst_controller:reset_out:reset_req (reset_req)"
+Warning: nios_ii_system: "No matching role found for rst_controller:reset_out:reset_req (reset_req)"
+Warning: nios_ii_system: "No matching role found for rst_controller:reset_out:reset_req (reset_req)"
+Warning: nios_ii_system: "No matching role found for rst_controller:reset_out:reset_req (reset_req)"
+Warning: nios_ii_system: "No matching role found for rst_controller:reset_out:reset_req (reset_req)"
+Warning: nios_ii_system: "No matching role found for rst_controller:reset_out:reset_req (reset_req)"
+Warning: nios_ii_system: "No matching role found for rst_controller:reset_out:reset_req (reset_req)"
+Warning: nios_ii_system: "No matching role found for rst_controller:reset_out:reset_req (reset_req)"
+Warning: nios_ii_system: "No matching role found for rst_controller:reset_out:reset_req (reset_req)"
+Warning: nios_ii_system: "No matching role found for rst_controller:reset_out:reset_req (reset_req)"
+Warning: nios_ii_system: "No matching role found for rst_controller:reset_out:reset_req (reset_req)"
+Warning: nios_ii_system: "No matching role found for rst_controller:reset_out:reset_req (reset_req)"
+Warning: nios_ii_system: "No matching role found for rst_controller:reset_out:reset_req (reset_req)"
+Warning: nios_ii_system: "No matching role found for rst_controller:reset_out:reset_req (reset_req)"
+Warning: nios_ii_system: "No matching role found for rst_controller:reset_out:reset_req (reset_req)"
+Warning: nios_ii_system: "No matching role found for rst_controller:reset_out:reset_req (reset_req)"
+Warning: nios_ii_system: "No matching role found for rst_controller:reset_out:reset_req (reset_req)"
+Warning: nios_ii_system: "No matching role found for rst_controller:reset_out:reset_req (reset_req)"
+Warning: nios_ii_system: "No matching role found for rst_controller:reset_out:reset_req (reset_req)"
+Warning: nios_ii_system: "No matching role found for rst_controller:reset_out:reset_req (reset_req)"
+Warning: nios_ii_system: "No matching role found for rst_controller:reset_out:reset_req (reset_req)"
+Warning: nios_ii_system: "No matching role found for rst_controller:reset_out:reset_req (reset_req)"
+Warning: nios_ii_system: "No matching role found for rst_controller:reset_out:reset_req (reset_req)"
+Warning: nios_ii_system: "No matching role found for rst_controller:reset_out:reset_req (reset_req)"
+Warning: nios_ii_system: "No matching role found for rst_controller:reset_out:reset_req (reset_req)"
+Warning: nios_ii_system: "No matching role found for rst_controller:reset_out:reset_req (reset_req)"
+Warning: nios_ii_system: "No matching role found for rst_controller:reset_out:reset_req (reset_req)"
+Warning: nios_ii_system: "No matching role found for rst_controller:reset_out:reset_req (reset_req)"
+Warning: nios_ii_system: "No matching role found for rst_controller:reset_out:reset_req (reset_req)"
+Warning: nios_ii_system: "No matching role found for rst_controller:reset_out:reset_req (reset_req)"
+Warning: nios_ii_system: "No matching role found for rst_controller:reset_out:reset_req (reset_req)"
+Warning: nios_ii_system: "No matching role found for rst_controller:reset_out:reset_req (reset_req)"
+Warning: nios_ii_system: "No matching role found for rst_controller:reset_out:reset_req (reset_req)"
+Warning: nios_ii_system: "No matching role found for rst_controller:reset_out:reset_req (reset_req)"
+Warning: nios_ii_system: "No matching role found for rst_controller:reset_out:reset_req (reset_req)"
+Warning: nios_ii_system: "No matching role found for rst_controller:reset_out:reset_req (reset_req)"
+Warning: nios_ii_system: "No matching role found for rst_controller:reset_out:reset_req (reset_req)"
+Warning: nios_ii_system: "No matching role found for rst_controller:reset_out:reset_req (reset_req)"
+Warning: nios_ii_system: "No matching role found for rst_controller:reset_out:reset_req (reset_req)"
+Warning: nios_ii_system: "No matching role found for rst_controller:reset_out:reset_req (reset_req)"
+Warning: nios_ii_system: "No matching role found for rst_controller:reset_out:reset_req (reset_req)"
+Warning: nios_ii_system: "No matching role found for rst_controller:reset_out:reset_req (reset_req)"
+Warning: nios_ii_system: "No matching role found for rst_controller:reset_out:reset_req (reset_req)"
+Warning: nios_ii_system: "No matching role found for rst_controller:reset_out:reset_req (reset_req)"
+Warning: nios_ii_system: "No matching role found for rst_controller:reset_out:reset_req (reset_req)"
+Warning: nios_ii_system: "No matching role found for rst_controller:reset_out:reset_req (reset_req)"
+Warning: nios_ii_system: "No matching role found for rst_controller:reset_out:reset_req (reset_req)"
+Warning: nios_ii_system: "No matching role found for rst_controller:reset_out:reset_req (reset_req)"
+Warning: nios_ii_system: "No matching role found for rst_controller:reset_out:reset_req (reset_req)"
+Warning: nios_ii_system: "No matching role found for rst_controller:reset_out:reset_req (reset_req)"
+Warning: nios_ii_system: "No matching role found for rst_controller:reset_out:reset_req (reset_req)"
+Warning: nios_ii_system: "No matching role found for rst_controller:reset_out:reset_req (reset_req)"
+Warning: nios_ii_system: "No matching role found for rst_controller:reset_out:reset_req (reset_req)"
+Warning: nios_ii_system: "No matching role found for rst_controller:reset_out:reset_req (reset_req)"
+Warning: nios_ii_system: "No matching role found for rst_controller:reset_out:reset_req (reset_req)"
+Warning: nios_ii_system: "No matching role found for rst_controller:reset_out:reset_req (reset_req)"
+Warning: nios_ii_system: "No matching role found for rst_controller:reset_out:reset_req (reset_req)"
+Warning: nios_ii_system: "No matching role found for rst_controller:reset_out:reset_req (reset_req)"
+Warning: nios_ii_system: "No matching role found for rst_controller:reset_out:reset_req (reset_req)"
+Warning: nios_ii_system: "No matching role found for rst_controller:reset_out:reset_req (reset_req)"
+Warning: nios_ii_system: "No matching role found for rst_controller:reset_out:reset_req (reset_req)"
+Warning: nios_ii_system: "No matching role found for rst_controller:reset_out:reset_req (reset_req)"
+Warning: nios_ii_system: "No matching role found for rst_controller:reset_out:reset_req (reset_req)"
+Warning: nios_ii_system: "No matching role found for rst_controller:reset_out:reset_req (reset_req)"
+Warning: nios_ii_system: "No matching role found for rst_controller:reset_out:reset_req (reset_req)"
+Warning: nios_ii_system: "No matching role found for rst_controller:reset_out:reset_req (reset_req)"
+Warning: nios_ii_system: "No matching role found for rst_controller:reset_out:reset_req (reset_req)"
+Warning: nios_ii_system: "No matching role found for rst_controller:reset_out:reset_req (reset_req)"
+Warning: nios_ii_system: "No matching role found for rst_controller:reset_out:reset_req (reset_req)"
+Warning: nios_ii_system: "No matching role found for rst_controller:reset_out:reset_req (reset_req)"
+Warning: nios_ii_system: "No matching role found for rst_controller:reset_out:reset_req (reset_req)"
+Warning: nios_ii_system: "No matching role found for rst_controller:reset_out:reset_req (reset_req)"
+Warning: nios_ii_system: "No matching role found for rst_controller:reset_out:reset_req (reset_req)"
+Warning: nios_ii_system: "No matching role found for rst_controller:reset_out:reset_req (reset_req)"
+Warning: nios_ii_system: "No matching role found for rst_controller:reset_out:reset_req (reset_req)"
+Warning: nios_ii_system: "No matching role found for rst_controller:reset_out:reset_req (reset_req)"
+Warning: nios_ii_system: "No matching role found for rst_controller:reset_out:reset_req (reset_req)"
+Warning: nios_ii_system: "No matching role found for rst_controller:reset_out:reset_req (reset_req)"
+Warning: nios_ii_system: "No matching role found for rst_controller:reset_out:reset_req (reset_req)"
+Warning: nios_ii_system: "No matching role found for rst_controller:reset_out:reset_req (reset_req)"
+Warning: nios_ii_system: "No matching role found for rst_controller:reset_out:reset_req (reset_req)"
+Warning: nios_ii_system: "No matching role found for rst_controller:reset_out:reset_req (reset_req)"
+Warning: nios_ii_system: "No matching role found for rst_controller:reset_out:reset_req (reset_req)"
+Warning: nios_ii_system: "No matching role found for rst_controller:reset_out:reset_req (reset_req)"
+Warning: nios_ii_system: "No matching role found for rst_controller:reset_out:reset_req (reset_req)"
+Warning: nios_ii_system: "No matching role found for rst_controller:reset_out:reset_req (reset_req)"
+Warning: nios_ii_system: "No matching role found for rst_controller:reset_out:reset_req (reset_req)"
+Warning: nios_ii_system: "No matching role found for rst_controller:reset_out:reset_req (reset_req)"
+Warning: nios_ii_system: "No matching role found for rst_controller:reset_out:reset_req (reset_req)"
+Warning: nios_ii_system: "No matching role found for rst_controller:reset_out:reset_req (reset_req)"
+Warning: nios_ii_system: "No matching role found for rst_controller:reset_out:reset_req (reset_req)"
+Warning: nios_ii_system: "No matching role found for rst_controller:reset_out:reset_req (reset_req)"
+Warning: nios_ii_system: "No matching role found for rst_controller:reset_out:reset_req (reset_req)"
+Warning: nios_ii_system: "No matching role found for rst_controller:reset_out:reset_req (reset_req)"
+Warning: nios_ii_system: "No matching role found for rst_controller:reset_out:reset_req (reset_req)"
+Warning: nios_ii_system: "No matching role found for rst_controller:reset_out:reset_req (reset_req)"
+Warning: nios_ii_system: "No matching role found for rst_controller:reset_out:reset_req (reset_req)"
+Warning: nios_ii_system: "No matching role found for rst_controller:reset_out:reset_req (reset_req)"
+Warning: nios_ii_system: "No matching role found for rst_controller:reset_out:reset_req (reset_req)"
+Warning: nios_ii_system: "No matching role found for rst_controller:reset_out:reset_req (reset_req)"
+Warning: nios_ii_system: "No matching role found for rst_controller:reset_out:reset_req (reset_req)"
+Warning: nios_ii_system: "No matching role found for rst_controller:reset_out:reset_req (reset_req)"
+Warning: nios_ii_system: "No matching role found for rst_controller:reset_out:reset_req (reset_req)"
+Warning: nios_ii_system: "No matching role found for rst_controller:reset_out:reset_req (reset_req)"
+Warning: nios_ii_system: "No matching role found for rst_controller:reset_out:reset_req (reset_req)"
+Warning: nios_ii_system: "No matching role found for rst_controller:reset_out:reset_req (reset_req)"
+Warning: nios_ii_system: "No matching role found for rst_controller:reset_out:reset_req (reset_req)"
+Warning: nios_ii_system: "No matching role found for rst_controller:reset_out:reset_req (reset_req)"
+Warning: nios_ii_system: "No matching role found for rst_controller:reset_out:reset_req (reset_req)"
+Warning: nios_ii_system: "No matching role found for rst_controller:reset_out:reset_req (reset_req)"
+Warning: nios_ii_system: "No matching role found for rst_controller:reset_out:reset_req (reset_req)"
+Warning: nios_ii_system: "No matching role found for rst_controller:reset_out:reset_req (reset_req)"
+Warning: nios_ii_system: "No matching role found for rst_controller:reset_out:reset_req (reset_req)"
+Warning: nios_ii_system: "No matching role found for rst_controller:reset_out:reset_req (reset_req)"
+Warning: nios_ii_system: "No matching role found for rst_controller:reset_out:reset_req (reset_req)"
+Warning: nios_ii_system: "No matching role found for rst_controller:reset_out:reset_req (reset_req)"
+Warning: nios_ii_system: "No matching role found for rst_controller:reset_out:reset_req (reset_req)"
+Warning: nios_ii_system: "No matching role found for rst_controller:reset_out:reset_req (reset_req)"
+Warning: nios_ii_system: "No matching role found for rst_controller:reset_out:reset_req (reset_req)"
+Warning: nios_ii_system: "No matching role found for rst_controller:reset_out:reset_req (reset_req)"
+Warning: nios_ii_system: "No matching role found for rst_controller:reset_out:reset_req (reset_req)"
+Warning: nios_ii_system: "No matching role found for rst_controller:reset_out:reset_req (reset_req)"
+Info: cpu: Starting RTL generation for module 'nios_ii_system_cpu'
+Info: cpu:   Generation command is [exec C:/altera/13.0sp1/quartus/../ip/altera/nios2_ip/altera_nios2/eperl.exe -I C:/altera/13.0sp1/quartus/common/ip/altera/common/perl/5.8.3 -I C:/altera/13.0sp1/quartus/sopc_builder/bin/europa -I C:/altera/13.0sp1/quartus/sopc_builder/bin/perl_lib -I C:/altera/13.0sp1/quartus/sopc_builder/bin -I C:/altera/13.0sp1/quartus/../ip/altera/nios2_ip/altera_nios2/cpu_lib -I C:/altera/13.0sp1/quartus/../ip/altera/nios2_ip/altera_nios2/nios_lib -I C:/altera/13.0sp1/quartus/../ip/altera/nios2_ip/altera_nios2 -I C:/altera/13.0sp1/quartus/../ip/altera/nios2_ip/altera_nios2 -- C:/altera/13.0sp1/quartus/../ip/altera/nios2_ip/altera_nios2/generate_rtl.epl --name=nios_ii_system_cpu --dir=C:/Users/CHRIST~1/AppData/Local/Temp/alt6550_5792611360954339510.dir/0003_cpu_gen/ --quartus_dir=C:/altera/13.0sp1/quartus --verilog --config=C:/Users/CHRIST~1/AppData/Local/Temp/alt6550_5792611360954339510.dir/0003_cpu_gen//nios_ii_system_cpu_processor_configuration.pl  --do_build_sim=0    --bogus  ]
+Info: cpu: # 2015.04.25 15:03:53 (*) Starting Nios II generation
+Info: cpu: # 2015.04.25 15:03:53 (*)   Checking for plaintext license.
+Info: cpu: # 2015.04.25 15:03:54 (*)   LM_LICENSE_FILE environment variable is empty
+Info: cpu: # 2015.04.25 15:03:54 (*)   Plaintext license not found.
+Info: cpu: # 2015.04.25 15:03:54 (*)   Checking for encrypted license (non-evaluation).
+Info: cpu: # 2015.04.25 15:03:55 (*)   LM_LICENSE_FILE environment variable is empty
+Info: cpu: # 2015.04.25 15:03:55 (*)   Encrypted license not found.  Defaulting to OCP evaluation license (produces a time-limited SOF)
+Info: cpu: # 2015.04.25 15:03:55 (*)   Elaborating CPU configuration settings
+Info: cpu: # 2015.04.25 15:03:55 (*)   Creating all objects for CPU
+Info: cpu: # 2015.04.25 15:03:56 (*)     Pipeline frontend
+Info: cpu: # 2015.04.25 15:03:58 (*)   Generating RTL from CPU objects
+Info: cpu: # 2015.04.25 15:04:01 (*)   Creating encrypted RTL
+Info: cpu: # 2015.04.25 15:04:02 (*) Done Nios II generation
+Info: cpu: Done RTL generation for module 'nios_ii_system_cpu'
+Info: cpu: "nios_ii_system" instantiated altera_nios2_qsys "cpu"
+Info: onchip_memory: Starting RTL generation for module 'nios_ii_system_onchip_memory'
+Info: onchip_memory:   Generation command is [exec C:/altera/13.0sp1/quartus/bin/perl/bin/perl.exe -I C:/altera/13.0sp1/quartus/common/ip/altera/common/perl/5.8.3 -I C:/altera/13.0sp1/quartus/sopc_builder/bin/europa -I C:/altera/13.0sp1/quartus/sopc_builder/bin/perl_lib -I C:/altera/13.0sp1/quartus/sopc_builder/bin -I C:/altera/13.0sp1/quartus/../ip/altera/sopc_builder_ip/common -I C:/altera/13.0sp1/quartus/../ip/altera/sopc_builder_ip/altera_avalon_onchip_memory2 -- C:/altera/13.0sp1/quartus/../ip/altera/sopc_builder_ip/altera_avalon_onchip_memory2/generate_rtl.pl --name=nios_ii_system_onchip_memory --dir=C:/Users/CHRIST~1/AppData/Local/Temp/alt6550_5792611360954339510.dir/0004_onchip_memory_gen/ --quartus_dir=C:/altera/13.0sp1/quartus --verilog --config=C:/Users/CHRIST~1/AppData/Local/Temp/alt6550_5792611360954339510.dir/0004_onchip_memory_gen//nios_ii_system_onchip_memory_component_configuration.pl  --do_build_sim=0  ]
+Info: onchip_memory: Done RTL generation for module 'nios_ii_system_onchip_memory'
+Info: onchip_memory: "nios_ii_system" instantiated altera_avalon_onchip_memory2 "onchip_memory"
+Info: switches: Starting RTL generation for module 'nios_ii_system_switches'
+Info: switches:   Generation command is [exec C:/altera/13.0sp1/quartus/bin/perl/bin/perl.exe -I C:/altera/13.0sp1/quartus/common/ip/altera/common/perl/5.8.3 -I C:/altera/13.0sp1/quartus/sopc_builder/bin/europa -I C:/altera/13.0sp1/quartus/sopc_builder/bin/perl_lib -I C:/altera/13.0sp1/quartus/sopc_builder/bin -I C:/altera/13.0sp1/quartus/../ip/altera/sopc_builder_ip/common -I C:/altera/13.0sp1/quartus/../ip/altera/sopc_builder_ip/altera_avalon_pio -- C:/altera/13.0sp1/quartus/../ip/altera/sopc_builder_ip/altera_avalon_pio/generate_rtl.pl --name=nios_ii_system_switches --dir=C:/Users/CHRIST~1/AppData/Local/Temp/alt6550_5792611360954339510.dir/0005_switches_gen/ --quartus_dir=C:/altera/13.0sp1/quartus --verilog --config=C:/Users/CHRIST~1/AppData/Local/Temp/alt6550_5792611360954339510.dir/0005_switches_gen//nios_ii_system_switches_component_configuration.pl  --do_build_sim=0  ]
+Info: switches: Done RTL generation for module 'nios_ii_system_switches'
+Info: switches: "nios_ii_system" instantiated altera_avalon_pio "switches"
+Info: led_red: Starting RTL generation for module 'nios_ii_system_led_red'
+Info: led_red:   Generation command is [exec C:/altera/13.0sp1/quartus/bin/perl/bin/perl.exe -I C:/altera/13.0sp1/quartus/common/ip/altera/common/perl/5.8.3 -I C:/altera/13.0sp1/quartus/sopc_builder/bin/europa -I C:/altera/13.0sp1/quartus/sopc_builder/bin/perl_lib -I C:/altera/13.0sp1/quartus/sopc_builder/bin -I C:/altera/13.0sp1/quartus/../ip/altera/sopc_builder_ip/common -I C:/altera/13.0sp1/quartus/../ip/altera/sopc_builder_ip/altera_avalon_pio -- C:/altera/13.0sp1/quartus/../ip/altera/sopc_builder_ip/altera_avalon_pio/generate_rtl.pl --name=nios_ii_system_led_red --dir=C:/Users/CHRIST~1/AppData/Local/Temp/alt6550_5792611360954339510.dir/0006_led_red_gen/ --quartus_dir=C:/altera/13.0sp1/quartus --verilog --config=C:/Users/CHRIST~1/AppData/Local/Temp/alt6550_5792611360954339510.dir/0006_led_red_gen//nios_ii_system_led_red_component_configuration.pl  --do_build_sim=0  ]
+Info: led_red: Done RTL generation for module 'nios_ii_system_led_red'
+Info: led_red: "nios_ii_system" instantiated altera_avalon_pio "led_red"
+Info: jtag_uart: Starting RTL generation for module 'nios_ii_system_jtag_uart'
+Info: jtag_uart:   Generation command is [exec C:/altera/13.0sp1/quartus/bin/perl/bin/perl.exe -I C:/altera/13.0sp1/quartus/common/ip/altera/common/perl/5.8.3 -I C:/altera/13.0sp1/quartus/sopc_builder/bin/europa -I C:/altera/13.0sp1/quartus/sopc_builder/bin/perl_lib -I C:/altera/13.0sp1/quartus/sopc_builder/bin -I C:/altera/13.0sp1/quartus/../ip/altera/sopc_builder_ip/common -I C:/altera/13.0sp1/quartus/../ip/altera/sopc_builder_ip/altera_avalon_jtag_uart -- C:/altera/13.0sp1/quartus/../ip/altera/sopc_builder_ip/altera_avalon_jtag_uart/generate_rtl.pl --name=nios_ii_system_jtag_uart --dir=C:/Users/CHRIST~1/AppData/Local/Temp/alt6550_5792611360954339510.dir/0007_jtag_uart_gen/ --quartus_dir=C:/altera/13.0sp1/quartus --verilog --config=C:/Users/CHRIST~1/AppData/Local/Temp/alt6550_5792611360954339510.dir/0007_jtag_uart_gen//nios_ii_system_jtag_uart_component_configuration.pl  --do_build_sim=0  ]
+Info: jtag_uart: Done RTL generation for module 'nios_ii_system_jtag_uart'
+Info: jtag_uart: "nios_ii_system" instantiated altera_avalon_jtag_uart "jtag_uart"
+Info: hex0: Starting RTL generation for module 'nios_ii_system_hex0'
+Info: hex0:   Generation command is [exec C:/altera/13.0sp1/quartus/bin/perl/bin/perl.exe -I C:/altera/13.0sp1/quartus/common/ip/altera/common/perl/5.8.3 -I C:/altera/13.0sp1/quartus/sopc_builder/bin/europa -I C:/altera/13.0sp1/quartus/sopc_builder/bin/perl_lib -I C:/altera/13.0sp1/quartus/sopc_builder/bin -I C:/altera/13.0sp1/quartus/../ip/altera/sopc_builder_ip/common -I C:/altera/13.0sp1/quartus/../ip/altera/sopc_builder_ip/altera_avalon_pio -- C:/altera/13.0sp1/quartus/../ip/altera/sopc_builder_ip/altera_avalon_pio/generate_rtl.pl --name=nios_ii_system_hex0 --dir=C:/Users/CHRIST~1/AppData/Local/Temp/alt6550_5792611360954339510.dir/0008_hex0_gen/ --quartus_dir=C:/altera/13.0sp1/quartus --verilog --config=C:/Users/CHRIST~1/AppData/Local/Temp/alt6550_5792611360954339510.dir/0008_hex0_gen//nios_ii_system_hex0_component_configuration.pl  --do_build_sim=0  ]
+Info: hex0: Done RTL generation for module 'nios_ii_system_hex0'
+Info: hex0: "nios_ii_system" instantiated altera_avalon_pio "hex0"
+Info: keys: Starting RTL generation for module 'nios_ii_system_keys'
+Info: keys:   Generation command is [exec C:/altera/13.0sp1/quartus/bin/perl/bin/perl.exe -I C:/altera/13.0sp1/quartus/common/ip/altera/common/perl/5.8.3 -I C:/altera/13.0sp1/quartus/sopc_builder/bin/europa -I C:/altera/13.0sp1/quartus/sopc_builder/bin/perl_lib -I C:/altera/13.0sp1/quartus/sopc_builder/bin -I C:/altera/13.0sp1/quartus/../ip/altera/sopc_builder_ip/common -I C:/altera/13.0sp1/quartus/../ip/altera/sopc_builder_ip/altera_avalon_pio -- C:/altera/13.0sp1/quartus/../ip/altera/sopc_builder_ip/altera_avalon_pio/generate_rtl.pl --name=nios_ii_system_keys --dir=C:/Users/CHRIST~1/AppData/Local/Temp/alt6550_5792611360954339510.dir/0009_keys_gen/ --quartus_dir=C:/altera/13.0sp1/quartus --verilog --config=C:/Users/CHRIST~1/AppData/Local/Temp/alt6550_5792611360954339510.dir/0009_keys_gen//nios_ii_system_keys_component_configuration.pl  --do_build_sim=0  ]
+Info: keys: Done RTL generation for module 'nios_ii_system_keys'
+Info: keys: "nios_ii_system" instantiated altera_avalon_pio "keys"
+Info: sram: Starting Generation of SRAM or SSRAM Controller
+Info: sram: "nios_ii_system" instantiated altera_up_avalon_sram "sram"
+Info: sys_clk_timer: Starting RTL generation for module 'nios_ii_system_sys_clk_timer'
+Info: sys_clk_timer:   Generation command is [exec C:/altera/13.0sp1/quartus/bin/perl/bin/perl.exe -I C:/altera/13.0sp1/quartus/common/ip/altera/common/perl/5.8.3 -I C:/altera/13.0sp1/quartus/sopc_builder/bin/europa -I C:/altera/13.0sp1/quartus/sopc_builder/bin/perl_lib -I C:/altera/13.0sp1/quartus/sopc_builder/bin -I C:/altera/13.0sp1/quartus/../ip/altera/sopc_builder_ip/common -I C:/altera/13.0sp1/quartus/../ip/altera/sopc_builder_ip/altera_avalon_timer -- C:/altera/13.0sp1/quartus/../ip/altera/sopc_builder_ip/altera_avalon_timer/generate_rtl.pl --name=nios_ii_system_sys_clk_timer --dir=C:/Users/CHRIST~1/AppData/Local/Temp/alt6550_5792611360954339510.dir/0011_sys_clk_timer_gen/ --quartus_dir=C:/altera/13.0sp1/quartus --verilog --config=C:/Users/CHRIST~1/AppData/Local/Temp/alt6550_5792611360954339510.dir/0011_sys_clk_timer_gen//nios_ii_system_sys_clk_timer_component_configuration.pl  --do_build_sim=0  ]
+Info: sys_clk_timer: Done RTL generation for module 'nios_ii_system_sys_clk_timer'
+Info: sys_clk_timer: "nios_ii_system" instantiated altera_avalon_timer "sys_clk_timer"
+Info: high_res_timer: Starting RTL generation for module 'nios_ii_system_high_res_timer'
+Info: high_res_timer:   Generation command is [exec C:/altera/13.0sp1/quartus/bin/perl/bin/perl.exe -I C:/altera/13.0sp1/quartus/common/ip/altera/common/perl/5.8.3 -I C:/altera/13.0sp1/quartus/sopc_builder/bin/europa -I C:/altera/13.0sp1/quartus/sopc_builder/bin/perl_lib -I C:/altera/13.0sp1/quartus/sopc_builder/bin -I C:/altera/13.0sp1/quartus/../ip/altera/sopc_builder_ip/common -I C:/altera/13.0sp1/quartus/../ip/altera/sopc_builder_ip/altera_avalon_timer -- C:/altera/13.0sp1/quartus/../ip/altera/sopc_builder_ip/altera_avalon_timer/generate_rtl.pl --name=nios_ii_system_high_res_timer --dir=C:/Users/CHRIST~1/AppData/Local/Temp/alt6550_5792611360954339510.dir/0012_high_res_timer_gen/ --quartus_dir=C:/altera/13.0sp1/quartus --verilog --config=C:/Users/CHRIST~1/AppData/Local/Temp/alt6550_5792611360954339510.dir/0012_high_res_timer_gen//nios_ii_system_high_res_timer_component_configuration.pl  --do_build_sim=0  ]
+Info: high_res_timer: Done RTL generation for module 'nios_ii_system_high_res_timer'
+Info: high_res_timer: "nios_ii_system" instantiated altera_avalon_timer "high_res_timer"
+Info: sysid: "nios_ii_system" instantiated altera_avalon_sysid_qsys "sysid"
+Info: lfsr: Starting RTL generation for module 'nios_ii_system_lfsr'
+Info: lfsr:   Generation command is [exec C:/altera/13.0sp1/quartus/bin/perl/bin/perl.exe -I C:/altera/13.0sp1/quartus/common/ip/altera/common/perl/5.8.3 -I C:/altera/13.0sp1/quartus/sopc_builder/bin/europa -I C:/altera/13.0sp1/quartus/sopc_builder/bin/perl_lib -I C:/altera/13.0sp1/quartus/sopc_builder/bin -I C:/altera/13.0sp1/quartus/../ip/altera/sopc_builder_ip/common -I C:/altera/13.0sp1/quartus/../ip/altera/sopc_builder_ip/altera_avalon_pio -- C:/altera/13.0sp1/quartus/../ip/altera/sopc_builder_ip/altera_avalon_pio/generate_rtl.pl --name=nios_ii_system_lfsr --dir=C:/Users/CHRIST~1/AppData/Local/Temp/alt6550_5792611360954339510.dir/0014_lfsr_gen/ --quartus_dir=C:/altera/13.0sp1/quartus --verilog --config=C:/Users/CHRIST~1/AppData/Local/Temp/alt6550_5792611360954339510.dir/0014_lfsr_gen//nios_ii_system_lfsr_component_configuration.pl  --do_build_sim=0  ]
+Info: lfsr: Done RTL generation for module 'nios_ii_system_lfsr'
+Info: lfsr: "nios_ii_system" instantiated altera_avalon_pio "lfsr"
+Info: binary_out: Starting RTL generation for module 'nios_ii_system_binary_out'
+Info: binary_out:   Generation command is [exec C:/altera/13.0sp1/quartus/bin/perl/bin/perl.exe -I C:/altera/13.0sp1/quartus/common/ip/altera/common/perl/5.8.3 -I C:/altera/13.0sp1/quartus/sopc_builder/bin/europa -I C:/altera/13.0sp1/quartus/sopc_builder/bin/perl_lib -I C:/altera/13.0sp1/quartus/sopc_builder/bin -I C:/altera/13.0sp1/quartus/../ip/altera/sopc_builder_ip/common -I C:/altera/13.0sp1/quartus/../ip/altera/sopc_builder_ip/altera_avalon_pio -- C:/altera/13.0sp1/quartus/../ip/altera/sopc_builder_ip/altera_avalon_pio/generate_rtl.pl --name=nios_ii_system_binary_out --dir=C:/Users/CHRIST~1/AppData/Local/Temp/alt6550_5792611360954339510.dir/0015_binary_out_gen/ --quartus_dir=C:/altera/13.0sp1/quartus --verilog --config=C:/Users/CHRIST~1/AppData/Local/Temp/alt6550_5792611360954339510.dir/0015_binary_out_gen//nios_ii_system_binary_out_component_configuration.pl  --do_build_sim=0  ]
+Info: binary_out: Done RTL generation for module 'nios_ii_system_binary_out'
+Info: binary_out: "nios_ii_system" instantiated altera_avalon_pio "binary_out"
+Info: bcd_in: Starting RTL generation for module 'nios_ii_system_bcd_in'
+Info: bcd_in:   Generation command is [exec C:/altera/13.0sp1/quartus/bin/perl/bin/perl.exe -I C:/altera/13.0sp1/quartus/common/ip/altera/common/perl/5.8.3 -I C:/altera/13.0sp1/quartus/sopc_builder/bin/europa -I C:/altera/13.0sp1/quartus/sopc_builder/bin/perl_lib -I C:/altera/13.0sp1/quartus/sopc_builder/bin -I C:/altera/13.0sp1/quartus/../ip/altera/sopc_builder_ip/common -I C:/altera/13.0sp1/quartus/../ip/altera/sopc_builder_ip/altera_avalon_pio -- C:/altera/13.0sp1/quartus/../ip/altera/sopc_builder_ip/altera_avalon_pio/generate_rtl.pl --name=nios_ii_system_bcd_in --dir=C:/Users/CHRIST~1/AppData/Local/Temp/alt6550_5792611360954339510.dir/0016_bcd_in_gen/ --quartus_dir=C:/altera/13.0sp1/quartus --verilog --config=C:/Users/CHRIST~1/AppData/Local/Temp/alt6550_5792611360954339510.dir/0016_bcd_in_gen//nios_ii_system_bcd_in_component_configuration.pl  --do_build_sim=0  ]
+Info: bcd_in: Done RTL generation for module 'nios_ii_system_bcd_in'
+Info: bcd_in: "nios_ii_system" instantiated altera_avalon_pio "bcd_in"
+Info: gpio: Starting RTL generation for module 'nios_ii_system_gpio'
+Info: gpio:   Generation command is [exec C:/altera/13.0sp1/quartus/bin/perl/bin/perl.exe -I C:/altera/13.0sp1/quartus/common/ip/altera/common/perl/5.8.3 -I C:/altera/13.0sp1/quartus/sopc_builder/bin/europa -I C:/altera/13.0sp1/quartus/sopc_builder/bin/perl_lib -I C:/altera/13.0sp1/quartus/sopc_builder/bin -I C:/altera/13.0sp1/quartus/../ip/altera/sopc_builder_ip/common -I C:/altera/13.0sp1/quartus/../ip/altera/sopc_builder_ip/altera_avalon_pio -- C:/altera/13.0sp1/quartus/../ip/altera/sopc_builder_ip/altera_avalon_pio/generate_rtl.pl --name=nios_ii_system_gpio --dir=C:/Users/CHRIST~1/AppData/Local/Temp/alt6550_5792611360954339510.dir/0017_gpio_gen/ --quartus_dir=C:/altera/13.0sp1/quartus --verilog --config=C:/Users/CHRIST~1/AppData/Local/Temp/alt6550_5792611360954339510.dir/0017_gpio_gen//nios_ii_system_gpio_component_configuration.pl  --do_build_sim=0  ]
+Info: gpio: Done RTL generation for module 'nios_ii_system_gpio'
+Info: gpio: "nios_ii_system" instantiated altera_avalon_pio "gpio"
+Info: sd_card: "nios_ii_system" instantiated Altera_UP_SD_Card_Avalon_Interface "sd_card"
+Info: sd_ram: Starting RTL generation for module 'nios_ii_system_sd_ram'
+Info: sd_ram:   Generation command is [exec C:/altera/13.0sp1/quartus/bin/perl/bin/perl.exe -I C:/altera/13.0sp1/quartus/common/ip/altera/common/perl/5.8.3 -I C:/altera/13.0sp1/quartus/sopc_builder/bin/europa -I C:/altera/13.0sp1/quartus/sopc_builder/bin/perl_lib -I C:/altera/13.0sp1/quartus/sopc_builder/bin -I C:/altera/13.0sp1/quartus/../ip/altera/sopc_builder_ip/common -I C:/altera/13.0sp1/quartus/../ip/altera/sopc_builder_ip/altera_avalon_new_sdram_controller -- C:/altera/13.0sp1/quartus/../ip/altera/sopc_builder_ip/altera_avalon_new_sdram_controller/generate_rtl.pl --name=nios_ii_system_sd_ram --dir=C:/Users/CHRIST~1/AppData/Local/Temp/alt6550_5792611360954339510.dir/0018_sd_ram_gen/ --quartus_dir=C:/altera/13.0sp1/quartus --verilog --config=C:/Users/CHRIST~1/AppData/Local/Temp/alt6550_5792611360954339510.dir/0018_sd_ram_gen//nios_ii_system_sd_ram_component_configuration.pl  --do_build_sim=0  ]
+Info: sd_ram: Done RTL generation for module 'nios_ii_system_sd_ram'
+Info: sd_ram: "nios_ii_system" instantiated altera_avalon_new_sdram_controller "sd_ram"
+Info: DE2_clock_sigs: Starting Generation of Required Clocks for DE-Series Boards
+Info: DE2_clock_sigs: "nios_ii_system" instantiated altera_up_clocks "DE2_clock_sigs"
+Info: lcd: Starting RTL generation for module 'nios_ii_system_lcd'
+Info: lcd:   Generation command is [exec C:/altera/13.0sp1/quartus/bin/perl/bin/perl.exe -I C:/altera/13.0sp1/quartus/common/ip/altera/common/perl/5.8.3 -I C:/altera/13.0sp1/quartus/sopc_builder/bin/europa -I C:/altera/13.0sp1/quartus/sopc_builder/bin/perl_lib -I C:/altera/13.0sp1/quartus/sopc_builder/bin -I C:/altera/13.0sp1/quartus/../ip/altera/sopc_builder_ip/common -I C:/altera/13.0sp1/quartus/../ip/altera/sopc_builder_ip/altera_avalon_lcd_16207 -- C:/altera/13.0sp1/quartus/../ip/altera/sopc_builder_ip/altera_avalon_lcd_16207/generate_rtl.pl --name=nios_ii_system_lcd --dir=C:/Users/CHRIST~1/AppData/Local/Temp/alt6550_5792611360954339510.dir/0020_lcd_gen/ --quartus_dir=C:/altera/13.0sp1/quartus --verilog --config=C:/Users/CHRIST~1/AppData/Local/Temp/alt6550_5792611360954339510.dir/0020_lcd_gen//nios_ii_system_lcd_component_configuration.pl  --do_build_sim=0  ]
+Info: lcd: Done RTL generation for module 'nios_ii_system_lcd'
+Info: lcd: "nios_ii_system" instantiated altera_avalon_lcd_16207 "lcd"
+Info: av_config: Starting Generation of Audio and Video Config
+Info: av_config: "nios_ii_system" instantiated altera_up_avalon_audio_and_video_config "av_config"
+Info: vga_char_buffer: Starting Generation of Character Buffer
+Info: vga_char_buffer: "nios_ii_system" instantiated altera_up_avalon_video_character_buffer_with_dma "vga_char_buffer"
+Info: vga_dual_clock_fifo: Starting Generation of the Dual Clock Buffer
+Info: vga_dual_clock_fifo: "nios_ii_system" instantiated altera_up_avalon_video_dual_clock_buffer "vga_dual_clock_fifo"
+Info: vga_controller: Starting Generation of VGA Controller
+Info: vga_controller: "nios_ii_system" instantiated altera_up_avalon_video_vga_controller "vga_controller"
+Info: vga_pixel_scalar: Starting Generation of Video Scaler
+Info: vga_pixel_scalar: "nios_ii_system" instantiated altera_up_avalon_video_scaler "vga_pixel_scalar"
+Info: rgb_resampler: Starting Generation of Video RGB Resampler
+Info: rgb_resampler: "nios_ii_system" instantiated altera_up_avalon_video_rgb_resampler "rgb_resampler"
+Info: vga_pixel_buffer: Starting Generation of VGA Pixel Buffer
+Info: vga_pixel_buffer: "nios_ii_system" instantiated altera_up_avalon_video_pixel_buffer_dma "vga_pixel_buffer"
+Info: cpu_instruction_master_translator: "nios_ii_system" instantiated altera_merlin_master_translator "cpu_instruction_master_translator"
+Info: cpu_jtag_debug_module_translator: "nios_ii_system" instantiated altera_merlin_slave_translator "cpu_jtag_debug_module_translator"
+Info: cpu_instruction_master_translator_avalon_universal_master_0_agent: "nios_ii_system" instantiated altera_merlin_master_agent "cpu_instruction_master_translator_avalon_universal_master_0_agent"
+Info: cpu_jtag_debug_module_translator_avalon_universal_slave_0_agent: "nios_ii_system" instantiated altera_merlin_slave_agent "cpu_jtag_debug_module_translator_avalon_universal_slave_0_agent"
+Info: cpu_jtag_debug_module_translator_avalon_universal_slave_0_agent_rsp_fifo: "nios_ii_system" instantiated altera_avalon_sc_fifo "cpu_jtag_debug_module_translator_avalon_universal_slave_0_agent_rsp_fifo"
+Info: addr_router: "nios_ii_system" instantiated altera_merlin_router "addr_router"
+Info: addr_router_001: "nios_ii_system" instantiated altera_merlin_router "addr_router_001"
+Info: addr_router_002: "nios_ii_system" instantiated altera_merlin_router "addr_router_002"
+Info: id_router: "nios_ii_system" instantiated altera_merlin_router "id_router"
+Info: id_router_002: "nios_ii_system" instantiated altera_merlin_router "id_router_002"
+Info: id_router_009: "nios_ii_system" instantiated altera_merlin_router "id_router_009"
+Info: id_router_018: "nios_ii_system" instantiated altera_merlin_router "id_router_018"
+Info: id_router_022: "nios_ii_system" instantiated altera_merlin_router "id_router_022"
+Info: limiter: "nios_ii_system" instantiated altera_merlin_traffic_limiter "limiter"
+Info: burst_adapter: "nios_ii_system" instantiated altera_merlin_burst_adapter "burst_adapter"
+Info: rst_controller: "nios_ii_system" instantiated altera_reset_controller "rst_controller"
+Info: cmd_xbar_demux: "nios_ii_system" instantiated altera_merlin_demultiplexer "cmd_xbar_demux"
+Info: cmd_xbar_demux_001: "nios_ii_system" instantiated altera_merlin_demultiplexer "cmd_xbar_demux_001"
+Info: cmd_xbar_demux_002: "nios_ii_system" instantiated altera_merlin_demultiplexer "cmd_xbar_demux_002"
+Info: cmd_xbar_mux: "nios_ii_system" instantiated altera_merlin_multiplexer "cmd_xbar_mux"
+Info: cmd_xbar_mux_009: "nios_ii_system" instantiated altera_merlin_multiplexer "cmd_xbar_mux_009"
+Info: Reusing file C:/final_178/nios_ii_system/synthesis/submodules/altera_merlin_arbitrator.sv
+Info: rsp_xbar_demux_002: "nios_ii_system" instantiated altera_merlin_demultiplexer "rsp_xbar_demux_002"
+Info: rsp_xbar_demux_009: "nios_ii_system" instantiated altera_merlin_demultiplexer "rsp_xbar_demux_009"
+Info: rsp_xbar_demux_022: "nios_ii_system" instantiated altera_merlin_demultiplexer "rsp_xbar_demux_022"
+Info: rsp_xbar_mux: "nios_ii_system" instantiated altera_merlin_multiplexer "rsp_xbar_mux"
+Info: Reusing file C:/final_178/nios_ii_system/synthesis/submodules/altera_merlin_arbitrator.sv
+Info: rsp_xbar_mux_001: "nios_ii_system" instantiated altera_merlin_multiplexer "rsp_xbar_mux_001"
+Info: Reusing file C:/final_178/nios_ii_system/synthesis/submodules/altera_merlin_arbitrator.sv
+Info: width_adapter: "nios_ii_system" instantiated altera_merlin_width_adapter "width_adapter"
+Info: Reusing file C:/final_178/nios_ii_system/synthesis/submodules/altera_merlin_address_alignment.sv
+Info: Reusing file C:/final_178/nios_ii_system/synthesis/submodules/altera_merlin_burst_uncompressor.sv
+Info: limiter_pipeline: "nios_ii_system" instantiated altera_avalon_st_pipeline_stage "limiter_pipeline"
+Info: Reusing file C:/final_178/nios_ii_system/synthesis/submodules/altera_avalon_st_pipeline_base.v
+Info: irq_mapper: "nios_ii_system" instantiated altera_irq_mapper "irq_mapper"
+Info: nios_ii_system: Done nios_ii_system" with 56 modules, 281 files, 5472901 bytes
+Info: ip-generate succeeded.
+Info: Finished: Create HDL design files for synthesis

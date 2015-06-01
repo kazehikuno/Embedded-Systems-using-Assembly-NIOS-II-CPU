@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--Created by Liquid XML 2008 (www.liquid-technologies.com) for Altera-->
+<ProgramExecution xmlns:xs="http://www.w3.org/2001/XMLSchema-instance">
+	<QuartusExecution>
+		<AddressBits>64</AddressBits>
+		<Compilation>
+			<CompileID>24383188084043.142999549305316</CompileID>
+			<DeviceFamily/>
+			<IncrementalCompilation>FULL_INCREMENTAL_COMPILATION</IncrementalCompilation>
+			<TopLevelEntityName>final_178_quartus</TopLevelEntityName>
+		</Compilation>
+		<ConfigurationSummary>
+			<AdvancedOptions>false</AdvancedOptions>
+			<ConfigurationDetails>
+				<Compression>true</Compression>
+				<DesignSecurity>false</DesignSecurity>
+				<DeviceName>EP2C35F672</DeviceName>
+				<ParallelFlashLoaderUsed>false</ParallelFlashLoaderUsed>
+				<SerialFlashLoaderUsed>false</SerialFlashLoaderUsed>
+			</ConfigurationDetails>
+			<ConfigurationDevice/>
+			<ConfigurationScheme>Active Serial</ConfigurationScheme>
+			<Successful>true</Successful>
+		</ConfigurationSummary>
+		<DateInvoked>2015/04/25 13:59:16</DateInvoked>
+		<ElapsedTime>3</ElapsedTime>
+		<IP>192.168.56.1,192.168.0.101</IP>
+		<IsInternal>false</IsInternal>
+		<IsQt>false</IsQt>
+		<License>
+			<Edition>Web Edition</Edition>
+			<LicenseHostID/>
+		</License>
+		<Machine>
+			<CPUCountLogical>4</CPUCountLogical>
+			<CPUCountPhysical>1</CPUCountPhysical>
+			<CPUSpeed>2295</CPUSpeed>
+			<Hostname>Hays_Laptop</Hostname>
+			<NIC>
+				<Address>162d2743a54b</Address>
+			</NIC>
+			<NIC>
+				<Address>f8a963079f65</Address>
+			</NIC>
+			<NIC>
+				<Address>142d2743a54b</Address>
+			</NIC>
+			<NIC>
+				<Address>08002700282d</Address>
+			</NIC>
+			<OS>Windows 7</OS>
+			<OSAddressBits>64</OSAddressBits>
+			<OSVersion>6.2</OSVersion>
+			<Platform>windows</Platform>
+			<ScreenResolution>unknown</ScreenResolution>
+			<TotalPhysicalRAM>3976</TotalPhysicalRAM>
+			<TotalVirtualRAM>832</TotalVirtualRAM>
+		</Machine>
+		<Name>quartus_asm</Name>
+		<PeakMemoryUsed>477</PeakMemoryUsed>
+		<ProjectRevision>
+			<ProjectName>final_178_quartus</ProjectName>
+			<Revision>final_178_quartus</Revision>
+		</ProjectRevision>
+		<QuartusInstallation>
+			<InstallationID>24383188084043.142000698602624</InstallationID>
+			<Version>
+				<Build>232</Build>
+				<BuildSite>SJ</BuildSite>
+				<BuildSuffix/>
+				<Edition>Web Edition</Edition>
+				<ServicePack>0</ServicePack>
+				<VersionNumber>13</VersionNumber>
+			</Version>
+		</QuartusInstallation>
+		<QuartusUser>
+			<AlteraUserName/>
+			<FAEContactName/>
+			<TalkbackStatus>
+				<DateSet/>
+				<TalkbackOn>false</TalkbackOn>
+			</TalkbackStatus>
+			<UserID>24383188084043.142000700105096</UserID>
+			<UserName>Christopher</UserName>
+		</QuartusUser>
+	</QuartusExecution>
+	<SchemaVersion>schema_2013-01-18</SchemaVersion>
+</ProgramExecution>
